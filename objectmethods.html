@@ -1,0 +1,32 @@
+<!--  Javascript object methods
+	this keyword and function
+	and how to add method to an object-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		var qwert={
+					firstName:"Java",
+					lastName:"Script",
+					id:1972,
+					name:function(){
+						return this.firstName+" "+this.lastName+" "+this.id;
+					}
+				  }
+				  console.log(qwert.name());
+				  var p=qwert.name().toUpperCase();
+				  console.log(p);
+				  /*
+				  var s="dnfvicnedhvfioweifjdksl";
+				  var z=s.toUpperCase();
+				  console.log(z);*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>

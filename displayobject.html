@@ -1,0 +1,25 @@
+<html>
+<head>
+
+</head>
+<body>
+	<p id="first"> </p>
+</body>
+<script type="text/javascript">
+		// Using for loop and properties concept of object
+	/*
+		var obj={name:"JavaScript",age:23,address:"Vijayawada",dob:1998,mark:"js"};
+		var i, text="";
+		for (i in obj){
+			text=text+obj[i]+" "
+		}
+		console.log(obj);
+		document.getElementById("first").innerHTML=obj.name+" "+obj.age+" "+obj.address;*/
+
+	// Predefined method 
+	var obj={name:"JavaScript",age:23,address:"Vijayawada",      dob:1998,mark:"js"};
+	var newVariable=Object.values(obj);
+	console.log(newVariable);
+	document.getElementById("first").innerHTML=newVariable;
+</script>
+</html>

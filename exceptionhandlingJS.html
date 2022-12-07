@@ -1,0 +1,40 @@
+<!-- 3 important things in Exception handling
+	try, catch, and finally   throw-it is a keyword throws errors
+
+	try{code} block : we write code in try block
+	catch {take care} : take cares of error
+	finally {executes without any thought of catch}
+	throw: we users manually throw 
+	
+	Note:
+	without try block 
+	we cannot use catch and finally block and vice versa
+
+	try: catch
+	try: finally
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var a=5;
+		try{
+			alert("hii i am from try block");
+			if(a==5) throw "56";
+		}
+		catch(err){
+			alert("it is the error"+err);
+		}
+		/*finally{
+			alert("Hii i am from finally block i dont see about the catch block")
+		}*/
+	</script>
+</head>
+<body>
+<p>Exception handling</p>
+</body>
+</html>

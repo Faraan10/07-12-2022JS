@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		/*console.log(Math.ceil(3.4))
+		console.log(Math.floor(3.4))
+		console.log(Math.round(2.8))
+		console.log(Math.round(2.1))
+		console.log(Math.abs(-9))
+		console.log(Math.pow(2,8))
+		console.log(Math.sqrt(16))*/
+
+		// OTP GENERATION
+		var characterList="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$^&*",password=[];
+		for(var i=1;i<=8;i++){
+			var randomNumber=Math.floor(Math.random()*characterList.length)
+		console.log(randomNumber,characterList.charAt(randomNumber))
+		//here we get the character from that random number
+		// through using charAt function and going to store in array based on push method
+		password.push(characterList.charAt(randomNumber))
+	}
+	console.log("After action",password)
+	//going to convert the array into a string
+	 //by join method
+	var finalResult=password.join("")
+	console.log(finalResult)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!-- MAth functions
+
+	mathematical operations
+
+	ceil      gives the next value without decimal point
+	floor     gives same value without decimal
+	round     gives value without decimal which is closer to it
+	random    gives always a random number but in between 0 to 1
+	abs       converts a negative to positive value
+	pow       Math.pow(base,exponent)
+
+-->
