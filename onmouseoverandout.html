@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function itsOver(){
+			alert("Iam from onmouseover event");
+		}
+		function iamOut(){
+			confirm("Iam confirming that i am out");
+		}
+	</script>
+</head>
+<body>
+	<p onmouseover="itsOver()">I am from paragraph element</p>
+	<button onmouseover="itsOver()">Mouseover</button>
+	<button onmouseout="iamOut()">Mouseout</button>
+</body>
+</html>

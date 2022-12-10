@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function iamChanging(){
+			console.log("It is changing event");
+
+		}
+		function keyDownInput(){
+			prompt("It is keydown");
+
+		}
+		function keyPressInput(){
+			prompt("It is onKeyPress");
+		}
+	</script>
+</head>
+<body>
+	<input type="text" placeholder="About onchange" onchange="iamChanging()"/>
+	<input type="text" placeholder="about onkeydown" onkeydown="keyDownInput()"/>
+	<input type="text" placeholder="about onkeypress" onkeypress="keyPressInput()"/>
+</body>
+</html>

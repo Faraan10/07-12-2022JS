@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function seeYouLater(){
+			document.getElementById("one").setAttribute("type","number");
+			document.getElementById("one").setAttribute("placeholder","Enter a number");
+			var create=document.createElement("input");
+			document.body.appendChild(create);
+		}
+	</script>
+</head>
+<body>
+<input id="one" placeholder="Enter a string"/>
+<button onclick="seeYouLater()">Submit</button>
+</body>
+</html>
+
+
+<!--
+syntax:-
+setAttribute("attribute_type","value")
+-->

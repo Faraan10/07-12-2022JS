@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		var a=29; //global variable
+		console.log("outside function:",a);
+		function func(){
+			var z=23; //local variable
+			console.log("inside the function:",z);
+			console.log("Inside function:",a);
+		}
+	</script>
+</head>
+<body>
+<button onclick="func()">Click Me</button>
+</body>
+</html>
