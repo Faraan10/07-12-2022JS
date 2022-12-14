@@ -1,0 +1,77 @@
+<!-- setTimeout it displays output after a time period
+	 setInterval it keeps repreating after given time-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		//Here inside function we can also use arrow function (>) instead of callback function.
+		//setTimeout(()=>{ },5000)
+		/*setTimeout(function(){
+			console.lox("Amazon Server");
+		},5000)
+		console.log("Flipkart Server");
+		console.log("Myntra Server");*/
+
+
+		//setInterval
+		/*setInterval(function(){
+			console.log("Amazon Server");
+		},2000)
+		console.log("Flipkart Server");
+		console.log("Myntra Server");*/
+
+
+
+		// Spread Operator [...,...]
+		/*var bikes=["Ninja","Hayabuza","Harley","BMW"],
+			cars=["Aston Martin","Maserati","Porsche","Lamborghini"]	
+		var vehicles=[...bikes,...cars]
+		console.log(vehicles);*/
+
+
+
+
+		/*var server={
+			name:"react",
+			age:20,
+			mobile:7654567834,
+			city:"Vijayawada",
+			country:"India",
+			bank_details:"Swiss bank",
+			family:{
+				name:"react",
+				age:20,
+				city:"Vijayawada"
+			}
+		}
+		// This is called as Destruction and used at server side mostly  (below)
+		var {name,age,mobile}=server
+		console.log(name,age,mobile)*/
+
+
+
+
+		// promises() it is a feature and it accepts 2 things resolve and reject
+
+		var promiseObj=new Promise((resolve,reject)=>{
+			var time=Math.random();
+			console.log(time);
+			if(time<0.5)
+				return resolve()
+			else
+				return reject()
+		})
+		console.log(promiseObj);
+		console.log("demo");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

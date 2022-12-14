@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function thankyou(){
+			var name=document.fv.name.value; //for text .innerHTML ,, for input field .value
+			var mobile=document.fv.mobile.value;
+			if(name==""){
+				alert("Enter your name");
+				return false;
+			}
+			if(name.length<3){
+				alert("Check your name");
+				return false;
+			}
+			if(mobile==""){
+			alert("Enter your mobile number");
+			return false;
+			}
+			if(isNaN(mobile)||mobile.length<10){
+				alert("You have entered a wrong number");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+<h1>Working on Name Validation (Regular Expressions) JavaScript</h1>
+<form name="fv" onsubmit="thankyou()"/>
+<p><input type="text" name="name" placeholder="Enter your name"/></p>
+<p><input type="text" name="mobile" placeholder="Enter your mobile number"/></p>
+<p><input type="Submit" value="Submit"/>
+<input type="Reset" value="Reset"/></p>
+</form>  
+</body>
+</html>

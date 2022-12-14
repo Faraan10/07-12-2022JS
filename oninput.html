@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function tip(){
+			alert("We are using the oninput");
+			var a=20,b=45;
+			console.log(a+b);
+			alert("");
+		}
+	</script>
+</head>
+<body>
+	<input oninput="tip()" type="text"/>
+	<input onchange="tip()" type="number"/>
+</body>
+</html>
