@@ -1,0 +1,107 @@
+<!--h a particular server we use API
+
+
+what is an API ?
+communicating with backend for storing the data and performing further actions
+
+Application programming Interface
+
+flask, django, react, angular,
+
+in a programming pattern
+
+
+
+How an API is going to look like ?
+
+url
+
+https://www.google.com/search?q=react
+
+here /search?q= is the API
+
+makes a request to the server
+
+the response what we get in json
+(Javascript object notation)
+{
+	"key":value;
+	"key":value;
+}
+
+
+XML extensible markup language
+
+
+AJAX Calls or rest calls
+
+get     retrieve
+post    create
+put     update
+delete  delete
+patch   post+put
+
+-->
+
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+	<section id="information">
+
+	</section>
+
+	<script>
+		// api for requesting 
+		fetch("https://reqres.in/api/users?page=2")
+		//response from fetch method
+		.then((res)=>{
+			//displaying that response
+			console.log(res)
+			//converting that response into our understandable language using json method
+			return res.json()
+		})
+		//getting that json data
+		.then((jsonRes)=>{
+			//displaying that json data
+			console.log(jsonRes)
+			display(jsonRes.data)
+		})
+		function display(users){
+			console.log("Data from fetch method",users)
+			for(var i=0;i<users.length;i++){
+				document.getElementById("information").innerHTML+=
+					`<div>
+						<p>Name:${users[i].first_name}</p>
+						<p>Email:${users[i].email}</p>
+						<img src="${users[i].avatar}"width="10%"/>
+						</div>
+					`
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
